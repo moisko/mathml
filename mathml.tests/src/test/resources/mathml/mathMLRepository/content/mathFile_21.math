@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd">
+		<mml:apply>
+			<mml:plus/>
+			<mml:apply>
+				<mml:power/>
+				<mml:apply>
+					<mml:abs/>
+						<mml:cn>-1</mml:cn>
+				</mml:apply>
+				<mml:apply>
+					<mml:plus/>
+					<mml:cn>1</mml:cn>
+					<mml:apply>
+						<mml:abs/>
+							<mml:cn>-1</mml:cn>
+					</mml:apply>
+				</mml:apply>
+			</mml:apply>
+			<mml:apply>
+				<mml:divide/>
+				<mml:apply>
+					<mml:abs/>
+						<mml:cn>-4</mml:cn>
+				</mml:apply>
+				<mml:cn>4</mml:cn>
+			</mml:apply>
+		</mml:apply>
+</mml:math>
+

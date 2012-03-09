@@ -1,0 +1,11 @@
+<classpath>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="src" path="/mathml.api"/>
+  <classpathentry kind="src" path="/mathml.core"/>
+  <classpathentry kind="src" path="/mathml.function"/>
+  <classpathentry kind="src" path="/mathml.operation"/>
+  <classpathentry kind="src" path="/mathml.sax.helpers"/>
+  <classpathentry kind="src" path="/mathml.utils"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+</classpath>

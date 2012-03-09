@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd">
+    <mml:apply>
+        <mml:divide/>
+        <mml:cn>4.0</mml:cn>
+        <mml:apply>
+            <mml:divide/>
+            <mml:cn>3.0</mml:cn>
+            <mml:apply>
+                <mml:divide/>
+                <mml:cn>2.0</mml:cn>
+                <mml:cn>3.0</mml:cn>
+            </mml:apply>
+        </mml:apply>
+    </mml:apply>
+</mml:math>

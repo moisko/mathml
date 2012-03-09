@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.w3.org/1998/Math/MathML http://www.w3.org/Math/XMLSchema/mathml2/mathml2.xsd">
+	<mml:mrow>
+		<mml:msup>
+			<mml:mn>1</mml:mn>
+			<mml:mn>2</mml:mn>
+		</mml:msup> 		 
+		<mml:mo>+</mml:mo>	
+		<mml:mo>sin</mml:mo>
+		<mml:mfenced>	
+			<mml:mrow>
+				<mml:mo>cos</mml:mo>
+				<mml:mfenced>
+					<mml:mn>30</mml:mn>	
+				</mml:mfenced>   
+			</mml:mrow>
+		</mml:mfenced>
+	</mml:mrow>
+</mml:math>
