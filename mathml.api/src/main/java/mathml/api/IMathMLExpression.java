@@ -8,7 +8,7 @@ import java.util.List;
  * @author Boris Borisov
  *         <p>
  *         Basic interface representing the tree structure of the parsed MathML
- *         file.
+ *         document instance.
  *         </p>
  */
 public interface IMathMLExpression extends Serializable {
