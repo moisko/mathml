@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mathml.api/mathml.api.iml" filepath="$PROJECT_DIR$/mathml.api/mathml.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathml.core/mathml.core.iml" filepath="$PROJECT_DIR$/mathml.core/mathml.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathml.function/mathml.function.iml" filepath="$PROJECT_DIR$/mathml.function/mathml.function.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathml.operation/mathml.operation.iml" filepath="$PROJECT_DIR$/mathml.operation/mathml.operation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathml.parser/mathml.parser.iml" filepath="$PROJECT_DIR$/mathml.parser/mathml.parser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathml.sax.helpers/mathml.sax.helpers.iml" filepath="$PROJECT_DIR$/mathml.sax.helpers/mathml.sax.helpers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathml.tests/mathml.tests.iml" filepath="$PROJECT_DIR$/mathml.tests/mathml.tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathml.transform/mathml.transform.iml" filepath="$PROJECT_DIR$/mathml.transform/mathml.transform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathml.utils/mathml.utils.iml" filepath="$PROJECT_DIR$/mathml.utils/mathml.utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mathmlapp.iml" filepath="$PROJECT_DIR$/mathmlapp.iml" />
+    </modules>
+  </component>
+</project>
+
