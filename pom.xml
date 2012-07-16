@@ -6,7 +6,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>MathML-Parent</name>
-	
 	<modules>
 		<module>mathml.api</module>
 		<module>mathml.core</module>
@@ -18,7 +17,6 @@
 		<module>mathml.utils</module>
 		<module>mathml.tests</module>
 	</modules>
-	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
