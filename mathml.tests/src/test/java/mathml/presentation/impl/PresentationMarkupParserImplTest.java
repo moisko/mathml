@@ -44,8 +44,8 @@ public class PresentationMarkupParserImplTest extends MathMLBaseTest {
 		Assert.assertEquals(expectedResult, actualResult);
 		
 		// transform to MathML Content  
-		MathMLTransformerFactory factory = MathMLTransformerFactory.newMathMLTransformerFactory();
-		MathMLTransformer transformer = factory.newMathMLTransformer();
+		MathMLTransformerFactory factory = MathMLTransformerFactory.getDefault();
+		MathMLTransformer transformer = factory.createMathMLTransformer();
 		transformer.transform(actualExpression, new OutputStreamWriter(System.out));
 	}
 	

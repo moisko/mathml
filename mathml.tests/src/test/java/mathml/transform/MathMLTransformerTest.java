@@ -27,8 +27,8 @@ public class MathMLTransformerTest extends MathMLBaseTest {
 
 	@Before
 	public void setUp() throws ParserConfigurationException {
-		MathMLTransformerFactory factory = MathMLTransformerFactory.newMathMLTransformerFactory();
-		transformer = factory.newMathMLTransformer();
+		MathMLTransformerFactory factory = MathMLTransformerFactory.getDefault();
+		transformer = factory.createMathMLTransformer();
 
 		if (!outputDir.exists()) {
 			outputDir.mkdirs();
