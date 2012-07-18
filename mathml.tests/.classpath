@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="src/test/java"/>
-	<classpathentry kind="src" path="src/test/resources"/>
-	<classpathentry kind="var" path="M2_REPO/junit/junit/4.8.1/junit-4.8.1.jar"/>
-	<classpathentry kind="var" path="M2_REPO/mathml/mathml.api/0.0.1-SNAPSHOT/mathml.api-0.0.1-SNAPSHOT.jar"/>
-	<classpathentry kind="var" path="M2_REPO/mathml/mathml.core/0.0.1-SNAPSHOT/mathml.core-0.0.1-SNAPSHOT.jar"/>
-	<classpathentry kind="var" path="M2_REPO/mathml/mathml.function/0.0.1-SNAPSHOT/mathml.function-0.0.1-SNAPSHOT.jar"/>
-	<classpathentry kind="var" path="M2_REPO/mathml/mathml.operation/0.0.1-SNAPSHOT/mathml.operation-0.0.1-SNAPSHOT.jar"/>
-	<classpathentry kind="var" path="M2_REPO/mathml/mathml.parser/0.0.1-SNAPSHOT/mathml.parser-0.0.1-SNAPSHOT.jar"/>
-	<classpathentry kind="var" path="M2_REPO/mathml/mathml.sax.helpers/0.0.1-SNAPSHOT/mathml.sax.helpers-0.0.1-SNAPSHOT.jar"/>
-	<classpathentry kind="var" path="M2_REPO/mathml/mathml.transform/0.0.1-SNAPSHOT/mathml.transform-0.0.1-SNAPSHOT.jar"/>
-	<classpathentry kind="var" path="M2_REPO/mathml/mathml.utils/0.0.1-SNAPSHOT/mathml.utils-0.0.1-SNAPSHOT.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/test/resources" output="target/test-classes" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="src" path="/mathml.api"/>
+  <classpathentry kind="src" path="/mathml.function"/>
+  <classpathentry kind="src" path="/mathml.operation"/>
+  <classpathentry kind="src" path="/mathml.transform"/>
+  <classpathentry kind="src" path="/mathml.core"/>
+  <classpathentry kind="src" path="/mathml.parser"/>
+  <classpathentry kind="src" path="/mathml.utils"/>
+  <classpathentry kind="src" path="/mathml.sax.helpers"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/4.8.1/junit-4.8.1.jar"/>
 </classpath>
