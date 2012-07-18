@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>mathml</groupId>
 	<artifactId>mathmlapp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<name>MathML-Parent</name>
 	<modules>
@@ -22,42 +22,42 @@
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.api</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.function</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.operation</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.transform</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.parser</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.sax.helpers</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.core</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.utils</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>1.0.0</version>
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
