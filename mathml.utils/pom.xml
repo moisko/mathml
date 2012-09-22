@@ -30,4 +30,5 @@
 			<artifactId>mathml.sax.helpers</artifactId>
 		</dependency>
 	</dependencies>
+
 </project>
