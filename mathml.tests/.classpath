@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
-  <classpathentry kind="src" path="src/test/resources" output="target/test-classes" excluding="**/*.java"/>
-  <classpathentry kind="output" path="target/classes"/>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-  <classpathentry kind="src" path="/mathml.api"/>
-  <classpathentry kind="src" path="/mathml.function"/>
-  <classpathentry kind="src" path="/mathml.operation"/>
-  <classpathentry kind="src" path="/mathml.transform"/>
-  <classpathentry kind="src" path="/mathml.core"/>
-  <classpathentry kind="src" path="/mathml.parser"/>
-  <classpathentry kind="src" path="/mathml.utils"/>
-  <classpathentry kind="src" path="/mathml.sax.helpers"/>
-  <classpathentry kind="var" path="M2_REPO/junit/junit/4.8.1/junit-4.8.1.jar"/>
+	<classpathentry including="**/*.java" kind="src" output="target/test-classes" path="src/test/java"/>
+	<classpathentry excluding="**/*.java" kind="src" output="target/test-classes" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mathml.api"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mathml.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mathml.function"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mathml.operation"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mathml.parser"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mathml.sax.helpers"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mathml.transform"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/mathml.utils"/>
+	<classpathentry kind="output" path="target/classes"/>
 </classpath>
