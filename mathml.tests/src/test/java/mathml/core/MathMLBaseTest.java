@@ -19,7 +19,7 @@ import mathml.operation.Multiplication;
 import mathml.operation.Plus;
 
 public class MathMLBaseTest {
-	public static final String MATHML_REPOSITORY_DIR = "src/test/resources/mathml/mathmlRepository";
+	public static final String MATHML_REPOSITORY_DIR = "src/test/resources/mathml/mathMLRepository";
 
 	protected static final String mathFile_1 = MATHML_REPOSITORY_DIR + "/content/mathFile_1.math";
 	protected static final String mathFile_2 = MATHML_REPOSITORY_DIR + "/content/mathFile_2.math";
