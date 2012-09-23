@@ -26,4 +26,5 @@ public interface IMathMLExpression extends Serializable {
 	 * @return true if the specified expression is empty, false otherwise
 	 */
 	public boolean isEmpty();
+
 }
