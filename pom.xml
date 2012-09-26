@@ -1,11 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<groupId>mathml</groupId>
 	<artifactId>mathmlapp</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<name>MathML-Parent</name>
+
 	<modules>
 		<module>mathml.api</module>
 		<module>mathml.core</module>
@@ -17,6 +19,7 @@
 		<module>mathml.utils</module>
 		<module>mathml.tests</module>
 	</modules>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -66,4 +69,5 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
 </project>
