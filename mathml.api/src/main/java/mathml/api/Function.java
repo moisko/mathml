@@ -3,7 +3,7 @@ package mathml.api;
 public interface Function extends MathematicalOperation {
 
 	// Content Markup function types
-	
+
 	public static final int SIN = 1;
 
 	public static final int COS = 2;
