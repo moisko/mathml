@@ -1,6 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	version="3.0">
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
 	<display-name>MathML Web Application</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- MathMLServlet -->
+
+	<servlet>
+		<servlet-name>MathMLServlet</servlet-name>
+		<servlet-class>mathml.servlet.MathMLServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MathMLServlet</servlet-name>
+		<url-pattern>/mathml.web</url-pattern>
+	</servlet-mapping>
+
+	<!-- Validator Servlet -->
+
+	<servlet>
+		<servlet-name>MathMLValidatorServlet</servlet-name>
+		<servlet-class>mathml.servlet.MathMLValidatorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MathMLValidatorServlet</servlet-name>
+		<url-pattern>/mathml.web/validator</url-pattern>
+	</servlet-mapping>
+
+	<!-- Transformer Servlet -->
+
+	<servlet>
+		<servlet-name>MathMLTransformerServlet</servlet-name>
+		<servlet-class>mathml.servlet.MathMLTransformerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MathMLTransformerServlet</servlet-name>
+		<url-pattern>/mathml.web/transform</url-pattern>
+	</servlet-mapping>
 </web-app>

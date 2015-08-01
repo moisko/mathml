@@ -129,7 +129,7 @@
 
 				<tr align="center">
 					<td>
-						<form name="filesForm" action="/mathmlproject_gae" method="post"
+						<form name="filesForm" action="/mathml.web" method="post"
 							enctype="multipart/form-data">
 							Content Markup File <input type="file" name="Content Markup File">
 							<br /> <br /> <input type="submit" name="Submit"
@@ -138,7 +138,7 @@
 					</td>
 
 					<td>
-						<form name="filesForm" action="/mathmlproject_gae/validator"
+						<form name="filesForm" action="/mathml.web/validator"
 							method="post" enctype="multipart/form-data">
 							MathML File <input type="file" name="MathML File"> <br />
 							<br /> <input type="submit" name="Submit" value="Validate">
@@ -150,7 +150,7 @@
 				</tr>
 				<tr align="center">
 					<td colspan="2">
-						<form name="filesForm" action="/mathmlproject_gae/transform"
+						<form name="filesForm" action="/mathml.web/transform"
 							method="post" enctype="multipart/form-data">
 							Presentation Markup File <input type="file"
 								name="Presentation Markup File"> <br /> <br /> <input
