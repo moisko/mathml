@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.w3.org/1998/Math/MathML http://www.altova.com/schemas/Math/mathml2.xsd">
+            <mml:apply>
+		<mml:plus/>
+		<mml:cn>2</mml:cn> 
+		<mml:apply>
+			<mml:minus/>
+			<mml:cn>4</mml:cn>
+			<mml:apply>
+				<mml:minus/>
+				<mml:cn>2</mml:cn>
+				<mml:apply>
+					<mml:ceiling/>
+					<mml:cn>15.013</mml:cn>
+				</mml:apply>
+			</mml:apply> 
+		</mml:apply>
+	</mml:apply>
+</mml:math>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>mathml</groupId>
+		<artifactId>mathmlapp</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>mathml.web</artifactId>
+	<packaging>war</packaging>
+
+	<name>Maven Webapp</name>
+
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+
+		<!-- MathML -->
+
+		<dependency>
+			<groupId>mathml</groupId>
+			<artifactId>mathml.api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mathml</groupId>
+			<artifactId>mathml.function</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mathml</groupId>
+			<artifactId>mathml.operation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mathml</groupId>
+			<artifactId>mathml.transform</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mathml</groupId>
+			<artifactId>mathml.parser</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mathml</groupId>
+			<artifactId>mathml.sax.helpers</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mathml</groupId>
+			<artifactId>mathml.core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>mathml</groupId>
+			<artifactId>mathml.utils</artifactId>
+		</dependency>
+
+		<!-- Servlet API -->
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>mathml.web</finalName>
+	</build>
+</project>

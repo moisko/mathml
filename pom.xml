@@ -5,7 +5,9 @@
 	<groupId>mathml</groupId>
 	<artifactId>mathmlapp</artifactId>
 	<version>1.0.0</version>
+
 	<packaging>pom</packaging>
+
 	<name>MathML-Parent</name>
 
 	<modules>
@@ -18,10 +20,12 @@
 		<module>mathml.transform</module>
 		<module>mathml.utils</module>
 		<module>mathml.tests</module>
+		<module>mathml.web</module>
 	</modules>
 
 	<properties>
-		<jdk.version>1.6</jdk.version>
+		<jdk.version>1.7</jdk.version>
+		<junit.version>4.8.2</junit.version>
 	</properties>
 
 	<dependencyManagement>
@@ -29,47 +33,47 @@
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.api</artifactId>
-				<version>1.0.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.function</artifactId>
-				<version>1.0.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.operation</artifactId>
-				<version>1.0.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.transform</artifactId>
-				<version>1.0.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.parser</artifactId>
-				<version>1.0.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.sax.helpers</artifactId>
-				<version>1.0.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.core</artifactId>
-				<version>1.0.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>mathml</groupId>
 				<artifactId>mathml.utils</artifactId>
-				<version>1.0.0</version>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>4.8.2</version>
+				<version>${junit.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
