@@ -60,8 +60,6 @@ public class MathMLServlet extends HttpServlet {
 					out.println("field name = " + fieldName);
 					out.println("content type = " + contentType);
 
-					// printMathMLExpressionToResultPage(expression, out);
-
 					out.println("----------------------------------------");
 					out.println("result = " + result);
 					out.println("----------------------------------------");

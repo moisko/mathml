@@ -18,7 +18,7 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>MathMLServlet</servlet-name>
-		<url-pattern>/mathml.web</url-pattern>
+		<url-pattern>/calculate</url-pattern>
 	</servlet-mapping>
 
 	<!-- Validator Servlet -->
@@ -29,7 +29,7 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>MathMLValidatorServlet</servlet-name>
-		<url-pattern>/mathml.web/validator</url-pattern>
+		<url-pattern>/validate</url-pattern>
 	</servlet-mapping>
 
 	<!-- Transformer Servlet -->
@@ -40,6 +40,6 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>MathMLTransformerServlet</servlet-name>
-		<url-pattern>/mathml.web/transform</url-pattern>
+		<url-pattern>/transform</url-pattern>
 	</servlet-mapping>
 </web-app>
