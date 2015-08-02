@@ -49,13 +49,14 @@ public class MathMLValidatorServlet extends HttpServlet {
 			FileItemIterator iterator = fileUpload.getItemIterator(request);
 			while (iterator.hasNext()) {
 				FileItemStream item = iterator.next();
-				InputStream mathMLContent = item.openStream();
 				if (item.isFormField()) {
 					out.println("Got a form field: " + item.getFieldName());
 				} else {
 					fileName = item.getName();
 					// validate MathML content
-					validateMathMLContent(mathMLContent, errorHandler);
+					try(InputStream mathMLContent = item.openStream()) {
+						validateMathMLContent(mathMLContent, errorHandler);
+					}
 					out.println("---------------------------------------");
 					out.println(fileName + " is valid");
 					out.println("---------------------------------------");

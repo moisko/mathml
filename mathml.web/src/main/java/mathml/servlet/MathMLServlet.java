@@ -28,7 +28,8 @@ public class MathMLServlet extends HttpServlet {
 
 	private static final String CONTENT_TYPE = "text/plain";
 
-	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws IOException {
 		ServletFileUpload fileUpload = new ServletFileUpload();
 		// set the file size limit
 		fileUpload.setSizeMax(MAX_SIZE_LIMIT);
@@ -40,7 +41,6 @@ public class MathMLServlet extends HttpServlet {
 			FileItemIterator iterator = fileUpload.getItemIterator(request);
 			while (iterator.hasNext()) {
 				FileItemStream item = iterator.next();
-				InputStream mathMLContent = item.openStream();
 				if (item.isFormField()) {
 					out.println("Got a form field: " + item.getFieldName());
 				} else {
@@ -50,9 +50,13 @@ public class MathMLServlet extends HttpServlet {
 
 					// calculate the result from the uploaded MathML file
 					IMathMLParser parser = new ContentMarkupParser();
-					IMathMLExpression expression = parser.parse(mathMLContent);
-					ICalculate calculator = new Calculator();
-					Double result = calculator.calculate(expression);
+					Double result = null;
+					try (InputStream mathMLContent = item.openStream()) {
+						IMathMLExpression expression = parser
+								.parse(mathMLContent);
+						ICalculate calculator = new Calculator();
+						result = calculator.calculate(expression);
+					}
 
 					// send the result to the client
 					out.println("----------------------------------------");

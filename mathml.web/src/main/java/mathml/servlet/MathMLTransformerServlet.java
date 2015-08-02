@@ -44,19 +44,19 @@ public class MathMLTransformerServlet extends HttpServlet {
 			FileItemIterator iterator = fileUpload.getItemIterator(request);
 			while (iterator.hasNext()) {
 				FileItemStream item = iterator.next();
-				InputStream mathMLContent = item.openStream();
 				if (item.isFormField()) {
 					out.println("Got a form field: " + item.getFieldName());
 				} else {
-					String fileName = item.getName();
-
 					IMathMLParser parser = new PresentationMarkupParser();
-					IMathMLExpression expression = parser.parse(mathMLContent);
-					MathMLTransformerFactory factory = MathMLTransformerFactory.getDefault();
-					MathMLTransformer transformer = factory.createMathMLTransformer();
-					out.println("----------------- " + fileName + " -----------------------");
-					transformer.transform(expression, out);
-					out.println("----------------------------------------------------------");
+					try(InputStream mathMLContent = item.openStream()) {
+						String fileName = item.getName();
+						out.println("----------------- " + fileName + " -----------------------");
+						IMathMLExpression expression = parser.parse(mathMLContent);
+						MathMLTransformerFactory factory = MathMLTransformerFactory.getDefault();
+						MathMLTransformer transformer = factory.createMathMLTransformer();
+						transformer.transform(expression, out);
+						out.println("----------------------------------------------------------");
+					}
 				}
 			}
 		} catch (FileUploadException e) {
