@@ -32,7 +32,7 @@ public class MathMLValidatorServlet extends HttpServlet {
 
 	private static final String CONTENT_TYPE = "text/plain";
 
-	private static final String SCHEMA_RELATIVE_PATH = "/WEB-INF/schema/mathml2/mathml2.xsd";
+	private static final String SCHEMA_RELATIVE_PATH = "/WEB-INF/classes/schema/mathml2/mathml2.xsd";
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		ServletFileUpload fileUpload = new ServletFileUpload();
