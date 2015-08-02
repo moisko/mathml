@@ -1,3 +1,4 @@
-*/target/*
-*/.settings/*
-*.versionsBackup
+.settings/
+target/
+.classpath
+.project
